@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9bcce4a68f45a9db131f972dcec1f46",
+    "content-hash": "b805f536eebc2d96201ede11ca42480c",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -970,16 +970,16 @@
         },
         {
             "name": "easycorp/easyadmin-bundle",
-            "version": "dev-master",
+            "version": "dev-edit_new_entity_popup",
             "source": {
                 "type": "git",
-                "url": "https://github.com/EasyCorp/EasyAdminBundle.git",
-                "reference": "45ec0797a110fa485c2f674d6888bb397d6bf491"
+                "url": "https://github.com/yceruto/EasyAdminBundle.git",
+                "reference": "a4fd3d57285a97f4e890a8998c7c1c9c73f597ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EasyCorp/EasyAdminBundle/zipball/45ec0797a110fa485c2f674d6888bb397d6bf491",
-                "reference": "45ec0797a110fa485c2f674d6888bb397d6bf491",
+                "url": "https://api.github.com/repos/yceruto/EasyAdminBundle/zipball/a4fd3d57285a97f4e890a8998c7c1c9c73f597ee",
+                "reference": "a4fd3d57285a97f4e890a8998c7c1c9c73f597ee",
                 "shasum": ""
             },
             "require": {
@@ -1034,7 +1034,12 @@
                     "EasyCorp\\Bundle\\EasyAdminBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "AppTestBundle\\": "tests/Fixtures/AppTestBundle/",
+                    "EasyCorp\\Bundle\\EasyAdminBundle\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1051,7 +1056,10 @@
                 "backend",
                 "generator"
             ],
-            "time": "2018-03-12T18:58:18+00:00"
+            "support": {
+                "source": "https://github.com/yceruto/EasyAdminBundle/tree/edit_new_entity_popup"
+            },
+            "time": "2018-03-14T12:28:27+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -4379,12 +4387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "33c3c70ac6962e520119b6ac41ff877ad1e93e11"
+                "reference": "f02cc42b21641cd53ab073ecd3df6f85529754aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/33c3c70ac6962e520119b6ac41ff877ad1e93e11",
-                "reference": "33c3c70ac6962e520119b6ac41ff877ad1e93e11",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/f02cc42b21641cd53ab073ecd3df6f85529754aa",
+                "reference": "f02cc42b21641cd53ab073ecd3df6f85529754aa",
                 "shasum": ""
             },
             "require": {
@@ -4464,7 +4472,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2018-03-10T09:44:49+00:00"
+            "time": "2018-03-13T08:46:09+00:00"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -5417,7 +5425,14 @@
             "time": "2018-01-03T17:15:19+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "dev-edit_new_entity_popup",
+            "package": "easycorp/easyadmin-bundle"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "easycorp/easyadmin-bundle": 20,
